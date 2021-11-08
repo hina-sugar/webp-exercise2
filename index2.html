@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The element of html</title>
+    <link rel="stylesheet" href="styles/style2.css">
+  </head>
+  <body>
+    <div class="footerFixed">
+    <div id="title">
+      <h1>HTML要素の紹介</h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+          <li><a href="#elmentP">p要素</a></li>
+          <li><a href="#elementH">h要素</a></li>
+          <li><a href="#elementIMG">img要素</a></li>
+          <li><a href="#elementOUL">ol,ul,li要素</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>bodyタグの中でコンテンツの作成で使用する4種類の頻出タグについて説明します。</p>
+
+        <h2 id="elementP">p要素</h2>
+        <p>「p」は「段落(paragraph)」の意味で、文章を作成する際に最もよく使うタグです。&ltp&gtと&lt/p&gtで囲まれたテキストは1つの段落を表します。</p>
+        <p>コード例&gt&gt</p>
+        <pre><code>
+                &ltp&gtこの文章は段落1です。&lt/p&gt
+                &ltp&gtこの文章は段落2です。&lt/p&gt
+        </code></pre>
+
+        <img src="images/p.png", alt="p要素の写真", title="p要素">
+
+        <h2 id="elementH">h1~h6要素</h2>
+        <p>「h」は「見出し(heading)」の意味で、見出し作成の際に使用するタグです。h1~h6までの6種類あり、文章の章題や節題を記述し、その見出しの大きさに合わせて設定できます。</p>
+        <p>コード例&gt&gt</p>
+        <pre><code>
+            &lth1&gt見出し1&lt/h1&gt
+            &lth2&gt見出し2&lt/h2&gt
+            &lth3&gt見出し3&lt/h3&gt
+            &lth4&gt見出し4&lt/h4&gt
+            &lth5&gt見出し5&lt/h5&gt
+            &lth6&gt見出し6&lt/h6&gt
+        </code></pre>
+
+        <img src="images/h.png", alt="h要素の写真">
+
+        <h2 id="elementIMG">img要素</h2>
+        <p>「img」は「image(画像)」の意味で、画像を表示するためのタグです。
+          表示する画像ファイルはsrc属性で指定し、web上ではgif形式、jpeg形式、png形式の画像形式を指定することができます。
+          imgタグのいくつかの属性について説明します。</p>
+          <ul>
+            <li>src属性</li><p>表示する画像ファイルを指定する、必須属性です。
+              画像ファイルがHTMLファイルのあるフォルダー内にある場合は、画像ファイル名を相対パスまたは絶対パスで指定します。
+              画像ファイルが他のウェブサイトにある場合は、その画像のURLをそのまま書きます。</p>
+            <li>alt属性</li><p>画像が表示できないブラウザで画像を見た場合に替わりに表示するテキストを指定しする属性です。
+                読み上げソフトで読み上げられたり、点字で表現されたりする場合もあります。</p>
+            <li>width,height属性</li><p>画像の幅や高さを指定する属性です。ピクセル数または%で指定します。</p>
+          </ul>
+        <p>以下のコード例は、画像ファイル(sample.png)がHTMLファイル内のimagesファイルにある場合です。</p>
+        <p>コード例&gt&gt</p>  
+        <pre><code>
+          &ltimg src="images/sample.png, alt=サンプル写真", width=100, height=50&gt
+        </code></pre>
+
+        <img src="images/img.png", alt="img要素の写真", width=100, height=50>
+
+        <h2 id="elementOUL">ol,ul,li要素</h2>
+        <p>リストを作成する際に使用する3種類のタグです。</p>
+        <ul>
+          <li>「ol」は「ordered list」の意味で、「1,2,3~」「a,b,c~」など十番のあるリストを作成する際に使用します。</li>
+          <li>「ul」は「unorderd list」の意味で、順番がないリストを作成する際に使用します。</li>
+          <li>「li」は「list item」の意味で、olタグやulタグのリストの各項目を作成する際に使用します。</li>
+        </ul>
+
+        <p>olのコード例&gt&gt</p>
+        <pre><code>
+            &ltol&gt 
+              &ltli&gt項目1&lt/li&gt
+              &ltli&gt項目2&lt/li&gt
+              &ltli&gt項目3&lt/li&gt
+            &lt/ol&gt
+        </code></pre>
+        <img src="images/ol.png", alt="ol要素の写真">
+        
+        <p>ulのコード例&gt&gt</p>
+        <pre><code>
+          &ltul&gt 
+            &ltli&gt項目&lt/li&gt
+            &ltli&gt項目&lt/li&gt
+            &ltli&gt項目&lt/li&gt
+          &lt/ul&gt
+       </code></pre>
+       <img src="images/ul.png", alt="ul要素の写真">
+    
+    <h2>参考文献</h2>
+      <ul>
+        <li><cite><a href="https://techacademy.jp/magazine/12305#sec3">最初のステップ！HTMLで覚えておきたい頻出タグ15選【初心者向け】現役エンジニアが紹介</a></cite></li>
+        <li><cite><a href="https://allabout.co.jp/gm/gc/476948/#:~:text=img%E3%82%BF%E3%82%B0%E3%81%AF%E3%80%81src%E5%B1%9E%E6%80%A7%E3%81%AB%E7%94%BB%E5%83%8F%E3%81%AEURL%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%80%81alt%E5%B1%9E%E6%80%A7%E3%81%AB%E4%BB%A3%E6%9B%BF%E6%96%87%E5%AD%97%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E4%BD%BF%E3%81%86%E3%80%82,%E5%BF%85%E8%A6%81%E3%81%AB%E5%BF%9C%E3%81%98%E3%81%A6width%E5%B1%9E%E6%80%A7%E3%82%84height%E5%B1%9E%E6%80%A7%E3%81%AA%E3%81%A9%E3%80%81%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E5%B1%9E%E6%80%A7%E3%82%82%E4%BB%98%E5%8A%A0%E3%81%A7%E3%81%8D%E3%82%8B%20img%E3%82%BF%E3%82%B0%E3%81%A8%E3%81%AF%E3%81%82%E3%81%8F%E3%81%BE%E3%81%A7%E3%82%82%E3%82%BF%E3%82%B0%E3%81%AE%E5%90%8D%E5%89%8D%E3%81%A7%E3%81%82%E3%82%8A%E3%80%81HTML%E3%81%AE%E6%96%87%E6%B3%95%E4%BB%95%E6%A7%98%E3%81%A7%E3%81%AF%E3%80%8Cimg%E8%A6%81%E7%B4%A0%E3%80%8D%E3%81%A8%E5%91%BC%E3%81%B3%E3%81%BE%E3%81%99%E3%80%82">imgタグ(img要素)の書き方：HTML5での画像掲載の基本</a></cite></li>
+      </ul>
+    </div>
+    <footer>
+      <p>5420005 佐藤緋奈</p>
+    </footer>
+    </div>
+  </body>
+</html>
